@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS IpaMetadata;
+CREATE TABLE IF NOT EXISTS IpaMetadata (
+	Id TEXT PRIMARY KEY,
+	UploadDate INTEGER,
+	BundleIdentifier TEXT NOT NULL,
+	BuildVersion TEXT NOT NULL,
+	AppName TEXT NOT NULL,
+	FileHash TEXT
+);
